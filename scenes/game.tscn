@@ -224,7 +224,9 @@ position = Vector2(44, 58)
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=244356434]
 position = Vector2(3, 5)
+scale = Vector2(0.97787994, -0.70539767)
 zoom = Vector2(3, 3)
+limit_bottom = 200
 position_smoothing_enabled = true
 
 [node name="platform3" parent="." unique_id=383133951 instance=ExtResource("3_lnu2h")]
@@ -239,18 +241,21 @@ position = Vector2(99, 115)
 monitorable = false
 
 [node name="Area2D2" parent="." unique_id=239783481 instance=ExtResource("4_lbhrr")]
-position = Vector2(177.00002, 115)
+position = Vector2(271, 96.99999)
 rotation = -0.2617994
+scale = Vector2(0.99999994, 0.99999994)
 monitorable = false
 
 [node name="Area2D3" parent="." unique_id=296372734 instance=ExtResource("4_lbhrr")]
 position = Vector2(142, 116)
 rotation = -0.2617994
+scale = Vector2(0.99999994, 0.99999994)
 monitorable = false
 
 [node name="Area2D4" parent="." unique_id=1682065797 instance=ExtResource("4_lbhrr")]
 position = Vector2(246.99998, 116.99999)
 rotation = -0.2617994
+scale = Vector2(0.99999994, 0.99999994)
 monitorable = false
 
 [node name="Area2D7" parent="." unique_id=1793968250 instance=ExtResource("4_lbhrr")]
