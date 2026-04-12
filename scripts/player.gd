@@ -20,9 +20,9 @@ func _physics_process(delta: float) -> void:
 	
 	#for animations 
 	
-	if direction == 0:
+	if velocity.x == 0:
 		animated_sprite_2d.play("idle")
-	elif direction != 0:
+	elif velocity.x != 0:
 		animated_sprite_2d.play("run")
 		
 	
