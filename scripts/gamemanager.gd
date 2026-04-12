@@ -4,5 +4,5 @@ extends Node
 var scor = 0
 func add_point():
 	scor += 1
-	score_cartd.text = "you collected " + str(scor) + " coins"
+	score_cartd.text =   str(scor) + " coins"
 	
