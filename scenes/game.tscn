@@ -239,22 +239,32 @@ position = Vector2(99, 115)
 monitorable = false
 
 [node name="Area2D2" parent="." unique_id=239783481 instance=ExtResource("4_lbhrr")]
-position = Vector2(99, 115)
+position = Vector2(177.00002, 115)
 rotation = -0.2617994
 monitorable = false
 
 [node name="Area2D3" parent="." unique_id=296372734 instance=ExtResource("4_lbhrr")]
-position = Vector2(99, 115)
+position = Vector2(142, 116)
 rotation = -0.2617994
 monitorable = false
 
 [node name="Area2D4" parent="." unique_id=1682065797 instance=ExtResource("4_lbhrr")]
-position = Vector2(238.00002, 113)
+position = Vector2(246.99998, 116.99999)
+rotation = -0.2617994
+monitorable = false
+
+[node name="Area2D7" parent="." unique_id=1793968250 instance=ExtResource("4_lbhrr")]
+position = Vector2(-77.000046, -76.00004)
+rotation = -0.2617994
+monitorable = false
+
+[node name="Area2D8" parent="." unique_id=2006661317 instance=ExtResource("4_lbhrr")]
+position = Vector2(-14, -76.00001)
 rotation = -0.2617994
 monitorable = false
 
 [node name="Area2D5" parent="." unique_id=670086565 instance=ExtResource("4_lbhrr")]
-position = Vector2(-108.00003, 20.999996)
+position = Vector2(-140, -10.000002)
 rotation = -0.2617994
 monitorable = false
 
