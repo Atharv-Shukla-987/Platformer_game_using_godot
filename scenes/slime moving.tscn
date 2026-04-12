@@ -41,7 +41,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0l8pv"]
-size = Vector2(11, 11)
+size = Vector2(8, 10)
 
 [node name="slime moving" type="Node2D" unique_id=717102128]
 script = ExtResource("1_n6pvg")
@@ -51,11 +51,12 @@ position = Vector2(-1, -13)
 sprite_frames = SubResource("SpriteFrames_v5wyi")
 autoplay = "default"
 frame_progress = 0.8529257
+flip_h = true
 
 [node name="Killzone" parent="." unique_id=1533222351 instance=ExtResource("2_n6pvg")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=1555314829]
-position = Vector2(-1, -7.5)
+position = Vector2(-1, -7)
 shape = SubResource("RectangleShape2D_0l8pv")
 
 [node name="ray right" type="RayCast2D" parent="." unique_id=1980875461]
