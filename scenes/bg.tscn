@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cb6urcyqewyll"]
+
+[ext_resource type="AudioStream" uid="uid://b5g3fkalabocr" path="res://assets/nickpanekaiassets-the-hollow-current-psychedelic-progressive-grunge-instrumental-374774.mp3" id="1_ehv3n"]
+
+[node name="BG music ( hollow knight)" type="AudioStreamPlayer" unique_id=1616357201]
+stream = ExtResource("1_ehv3n")
+volume_db = -12.435
+autoplay = true
+bus = &"New Bus"
