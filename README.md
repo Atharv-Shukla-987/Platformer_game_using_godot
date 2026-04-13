@@ -1,49 +1,44 @@
-# INTRODUCTION
+# 🏃‍♂️ 2D Platformer Game (Godot)
 
-**SAVE THE PRINCES**
-It is my 1st project mmade in godot
-it is a 2d platform game made using godot s building script and some free assets
+A physics-based 2D side-scrolling platformer developed in the **Godot Engine**. This project implements modern platformer mechanics, focusing on responsive controls
 
+---
 
-# PROCESS
-1. INSTALLED GODOT
-2. INSTALLED WAKA TIME
-3. ADDED BASIC ASSETS
-4. MADE DOME BASICS
-5. AND AS I FOROGT TO ADD TO GIT I THEN ADDES IT TO GIT
-6. MADE LEVELS
-7. CREATED CHARACTER PHYSICS
-8. ADDED ANIMATIONS (IDLE AND RUNIING)
-9. WAS NOT ADBLE TO ADD JUMOP
-10. ADDED PLATFORMS
-11. ADDED MOVING PLATFORMS
-12. BUILD KILLZONE AND WORLD BOUNDARY
-13. ADDED OPPONENTS ( MOVING AND STAATIONARY)
-14. ADDED BG SOUND ( FROM HOLLOW KNIGHT).
-15. ADDED LEVEL CHANGER
+## 🎮 Game Features 
+1. **Kinematic Controller:**      Smooth movement using `CharacterBody2D`.
+ 2.**Physics System:**          Gravity  and acceleration constants for a "weighty" feel.
+ 3.**Animation States:**       Integrated `AnimatedSprite2D` handling idle, run, and jump states.
+ 4.**Level Design:**           Utilizes Godot's **TileMap** system for efficient world building.
+ 5.**Camera Tracking:**      `Camera2D` with smoothing and boundary limits.
+6. A background sound from game hollow knight
+## 🛠️ Tech Used
+* **Engine:**    Godot 4.3
+* **Scripting:** GDScript
 
+## 📂 Project Structure
 
-# FEATURES
-1. MOVEABLE CHARACTER
-2. MOVABLE ENEMY
-3. MOVABLE PLATFORMS
-4. SCORE MANAGER
-5. KILLZONE
-6. MOVING CAMEARA
-7. MULTIPLE LEVELS
-8. OBITAINABLE ITEMS (COIN)
+Platformer_game_using_godot/
+├──  Scenes/          
+├── Scripts/        
+├──  Assets/           
+├── project.godot       
+└── README.md          
+```
+## 🚀 Getting Started
 
+    Go to https://platformer-game-using-go-git-7b3ca4-atharv-shukla-987s-projects.vercel.app/exports/exports.html
 
+### 🕹️ Controls
 
-# STRUCTURE
-1 ADDONS 
-   SUPER WAKA TIME
-2. EXPORTS 
-3. SCENES
-      LEVELS
- 4 SCRIPTS
+    Move: A / D or Arrow Keys
 
+    Jump: Space
 
+## 👤 Author
+
+Atharv Shukla
+
+    GitHub: @Atharv-Shukla-987
 
 
  
