@@ -19,6 +19,7 @@ A physics-based 2D side-scrolling platformer developed in the **Godot Engine**. 
 ## 📂 Project Structure
 
 Platformer_game_using_godot/
+
 ├──  Scenes/          
 ├── Scripts/        
 ├──  Assets/           
