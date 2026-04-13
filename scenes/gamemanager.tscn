@@ -6,11 +6,14 @@
 script = ExtResource("1_8cp1g")
 
 [node name="score cartd" type="Label" parent="." unique_id=228544608]
+anchors_preset = -1
+anchor_left = -0.027777778
+anchor_bottom = 0.040123455
 offset_left = 529.0
 offset_top = -40.0
 offset_right = 649.0
 offset_bottom = -17.0
-text = "0 coins "
+text = "0 coins collecteed"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
