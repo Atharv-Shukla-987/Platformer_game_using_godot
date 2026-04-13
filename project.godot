@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="retro game 2 try"
-run/main_scene="uid://c04vxfo5awyb0"
+run/main_scene="uid://ch6c1rks0d3di"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 

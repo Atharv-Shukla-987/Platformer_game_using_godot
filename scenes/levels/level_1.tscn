@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://b4cq6nicdc8lg"]
+
+[ext_resource type="PackedScene" uid="uid://dp1ms8wu1se6g" path="res://scenes/player.tscn" id="1_15mv3"]
+[ext_resource type="PackedScene" uid="uid://df7m5q0rhisay" path="res://scenes/camera_2d.tscn" id="2_e3sih"]
+[ext_resource type="PackedScene" uid="uid://bjbx0teqxlsge" path="res://scenes/tile_map.tscn" id="3_2y5yt"]
+[ext_resource type="Texture2D" uid="uid://cpn63uyap3gvs" path="res://assets/tilesetOpenGameBackground.png" id="4_2os1m"]
+[ext_resource type="PackedScene" uid="uid://7jhaeagmdeqc" path="res://scenes/coin.tscn" id="5_go7sj"]
+[ext_resource type="PackedScene" uid="uid://bki2prr2wiaqq" path="res://scenes/platform.tscn" id="6_7gny6"]
+[ext_resource type="PackedScene" uid="uid://5k0sfxbeucs2" path="res://scenes/gamemanager.tscn" id="7_2aecg"]
+[ext_resource type="PackedScene" uid="uid://dj3eph72hljys" path="res://scenes/killzone.tscn" id="8_6dial"]
+
+[sub_resource type="Animation" id="Animation_l4w4f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(386, -25)]
+}
+
+[sub_resource type="Animation" id="Animation_46i1k"]
+resource_name = "move"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.01, 2.1333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(386, -25), Vector2(390, 145)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qxja1"]
+_data = {
+&"RESET": SubResource("Animation_l4w4f"),
+&"move": SubResource("Animation_46i1k")
+}
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qxja1"]
+distance = -233.0
+
+[node name="level 1" type="Node2D" unique_id=878690981]
+
+[node name="player" parent="." unique_id=1638708273 instance=ExtResource("1_15mv3")]
+top_level = true
+
+[node name="Camera2D" parent="player" unique_id=1139573095 instance=ExtResource("2_e3sih")]
+
+[node name="TileMap" parent="." unique_id=1156741918 instance=ExtResource("3_2y5yt")]
+collision_animatable = true
+layer_0/tile_data = PackedInt32Array(786462, 393216, 2, 655394, 393216, 0, 393263, 393216, 5, 393265, 393216, 5, 262191, 393216, 3, 327727, 393216, 4, 262193, 393216, 3, 327729, 393216, 4, 131078, 0, 4, 196614, 0, 5, -65538, 0, 3, -2, 0, 4, 65534, 0, 4, 131070, 0, 5, 65542, 0, 3)
+layer_1/tile_data = PackedInt32Array(458749, 0, 1, 458750, 0, 1, 458751, 0, 1, 327685, 0, 1, 327680, 0, 1, 327681, 0, 1, 393218, 0, 1, 393220, 0, 1, 393219, 0, 1, 458748, 0, 1, 458747, 0, 1, 524283, 0, 1, 524284, 0, 1, 524287, 0, 1, 524286, 0, 1, 524285, 0, 1, 458752, 0, 1, 393216, 0, 1, 393217, 0, 1, 458753, 0, 1, 458755, 0, 1, 458754, 0, 1, 458756, 0, 1, 393221, 0, 1, 458757, 0, 1, 14, 0, 0, 327672, 0, 0, 262137, 0, 0, 262138, 65536, 1, 196603, 0, 0, 196604, 0, 0, 196605, 0, 0, 196606, 0, 0, 196607, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 196612, 0, 0, 196613, 0, 0, 262150, 0, 0, 327687, 0, 1, 393223, 0, 1, 393207, 0, 0, 393209, 65536, 1, 393210, 0, 1, 393211, 0, 1, 327675, 65536, 1, 327676, 65536, 1, 327677, 65536, 1, 327678, 65536, 1, 262143, 65536, 1, 196608, 65536, 1, 262144, 65536, 1, 262145, 65536, 1, 262142, 65536, 1, 262141, 65536, 1, 262140, 65536, 1, 262139, 65536, 1, 327674, 65536, 1, 327673, 65536, 1, 327679, 65536, 1, 262146, 65536, 1, 262147, 65536, 1, 262148, 65536, 1, 196609, 65536, 1, 458743, 0, 1, 524279, 0, 1, 524280, 0, 1, 524281, 0, 1, 327686, 0, 1, 393222, 0, 1, 458758, 0, 1, 327682, 0, 1, 327683, 0, 1, 327684, 0, 1, 393215, 0, 1, 393214, 0, 1, 393213, 0, 1, 458746, 0, 1, 458745, 0, 1, 393212, 0, 1, 458744, 0, 1, 393208, 0, 1, 524282, 0, 1, 196611, 0, 0, 196610, 65536, 1, 262149, 65536, 1, 262152, 0, 0, 262151, 0, 0, 196617, 0, 0, 131082, 0, 0, 262154, 0, 1, 262153, 0, 1, 327689, 0, 1, 327688, 0, 1, 393224, 0, 1, 458760, 0, 1, 458759, 0, 1, 393225, 0, 1, 393226, 0, 1, 327690, 0, 1, 196618, 0, 1, 262160, 0, 0, 393233, 0, 0, 524308, 0, 0, -65519, 0, 0, -196587, 0, 0, 393229, 0, 0, 262155, 0, 0, 720936, 393216, 0, 655401, 524288, 0, 589866, 393216, 0, 524331, 393216, 0, 524332, 393216, 0, 458796, 458752, 0, 458797, 458752, 0, 458798, 458752, 0, 458799, 458752, 0, 458800, 458752, 0, 458809, 458752, 0, 458810, 458752, 0, 524346, 458752, 0, 589882, 458752, 0, 655418, 393216, 0, 655400, 458752, 0, 589865, 458752, 0, 524330, 458752, 0, 458795, 458752, 0, 393260, 458752, 0, 458801, 458752, 0, 458802, 393216, 0, 458803, 393216, 0, 458804, 458752, 0, 393273, 458752, 0, 393274, 458752, 0, 393270, 458752, 0, 458805, 458752, 0, 327735, 458752, 0, 393272, 524288, 0, 720937, 524288, 0, 655402, 524288, 0, 655403, 524288, 0, 589867, 524288, 0, 589868, 524288, 0, 589869, 524288, 0, 589870, 524288, 0, 589871, 524288, 0, 524336, 524288, 0, 524337, 524288, 0, 524338, 524288, 0, 524339, 524288, 0, 524335, 524288, 0, 524334, 524288, 0, 524333, 524288, 0, 524340, 524288, 0, 524341, 524288, 0, 524342, 524288, 0, 524343, 524288, 0, 458807, 524288, 0, 393271, 524288, 0, 458806, 524288, 0, 458808, 524288, 0, 524344, 524288, 0, 589880, 524288, 0, 524345, 524288, 0, 589881, 524288, 0, 589879, 524288, 0, 589878, 524288, 0, 589877, 524288, 0, 589876, 524288, 0, 589875, 524288, 0, 589874, 524288, 0, 589873, 524288, 0, 589872, 524288, 0, 655407, 524288, 0, 655406, 524288, 0, 655405, 524288, 0, 655404, 524288, 0, 720938, 524288, 0, 720939, 524288, 0, 720940, 524288, 0, 720941, 524288, 0, 720942, 524288, 0, 720943, 524288, 0, 720944, 524288, 0, 720945, 524288, 0, 720946, 524288, 0, 655410, 524288, 0, 655411, 524288, 0, 655412, 524288, 0, 655413, 524288, 0, 655414, 524288, 0, 655417, 524288, 0, 655416, 524288, 0, 655415, 524288, 0, 655409, 524288, 0, 655408, 524288, 0, 393267, 393216, 0)
+
+[node name="TilesetOpenGameBackground" type="Sprite2D" parent="TileMap" unique_id=343476278]
+show_behind_parent = true
+position = Vector2(443, -77)
+scale = Vector2(7.7562494, 3.1445313)
+texture = ExtResource("4_2os1m")
+
+[node name="coins" type="Node" parent="." unique_id=1821419496]
+
+[node name="coin" parent="coins" unique_id=1115677367 instance=ExtResource("5_go7sj")]
+position = Vector2(99, 0)
+
+[node name="coin2" parent="coins" unique_id=204465619 instance=ExtResource("5_go7sj")]
+position = Vector2(-137, -6)
+
+[node name="coin3" parent="coins" unique_id=548725765 instance=ExtResource("5_go7sj")]
+position = Vector2(339, -68)
+
+[node name="coin4" parent="coins" unique_id=1548168561 instance=ExtResource("5_go7sj")]
+position = Vector2(223, -58)
+
+[node name="coin5" parent="coins" unique_id=1871140034 instance=ExtResource("5_go7sj")]
+position = Vector2(329, 57)
+
+[node name="coin6" parent="coins" unique_id=2100721170 instance=ExtResource("5_go7sj")]
+position = Vector2(-6, -35)
+
+[node name="coin7" parent="coins" unique_id=497460837 instance=ExtResource("5_go7sj")]
+position = Vector2(323, 109)
+
+[node name="coin14" parent="coins" unique_id=212498231 instance=ExtResource("5_go7sj")]
+position = Vector2(787, 65)
+
+[node name="coin15" parent="coins" unique_id=1799701999 instance=ExtResource("5_go7sj")]
+position = Vector2(713, 74)
+
+[node name="coin16" parent="coins" unique_id=796530575 instance=ExtResource("5_go7sj")]
+position = Vector2(674, 111)
+
+[node name="coin8" parent="coins" unique_id=660491208 instance=ExtResource("5_go7sj")]
+position = Vector2(259, 42)
+
+[node name="coin9" parent="coins" unique_id=1703563600 instance=ExtResource("5_go7sj")]
+position = Vector2(212, 81)
+
+[node name="coin10" parent="coins" unique_id=1415501300 instance=ExtResource("5_go7sj")]
+position = Vector2(55, 30)
+
+[node name="coin11" parent="coins" unique_id=1382095493 instance=ExtResource("5_go7sj")]
+position = Vector2(127, 51)
+
+[node name="coin12" parent="coins" unique_id=1491455622 instance=ExtResource("5_go7sj")]
+position = Vector2(181, 49)
+
+[node name="coin13" parent="coins" unique_id=1013646067 instance=ExtResource("5_go7sj")]
+position = Vector2(-110, 37)
+
+[node name="platforms" type="Node" parent="." unique_id=1367235830]
+
+[node name="platform" parent="platforms" unique_id=1233318604 instance=ExtResource("6_7gny6")]
+top_level = true
+position = Vector2(386, -25)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="platforms/platform" unique_id=1566370172]
+libraries/ = SubResource("AnimationLibrary_qxja1")
+autoplay = &"move"
+
+[node name="gamemanager" parent="." unique_id=223837171 instance=ExtResource("7_2aecg")]
+unique_name_in_owner = true
+
+[node name="Killzone" parent="." unique_id=1533222351 instance=ExtResource("8_6dial")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=421156574]
+shape = SubResource("WorldBoundaryShape2D_qxja1")
+
+[node name="Label" type="Label" parent="." unique_id=1397173384]
+offset_left = 632.0
+offset_top = 32.0
+offset_right = 965.0
+offset_bottom = 93.0
+theme_override_colors/font_color = Color(0.04, 0.04, 0.04, 1)
+text = "Game ends stay tuned for more"

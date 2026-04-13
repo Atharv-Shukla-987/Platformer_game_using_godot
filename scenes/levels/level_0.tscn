@@ -1,19 +1,20 @@
 [gd_scene format=3 uid="uid://c04vxfo5awyb0"]
 
-[ext_resource type="PackedScene" uid="uid://5k0sfxbeucs2" path="res://scenes/gamemanager.tscn" id="1_0tnpc"]
-[ext_resource type="PackedScene" uid="uid://dp1ms8wu1se6g" path="res://scenes/player.tscn" id="1_80nbo"]
-[ext_resource type="Texture2D" uid="uid://edn0g671stlb" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
-[ext_resource type="PackedScene" uid="uid://7jhaeagmdeqc" path="res://scenes/coin.tscn" id="4_lbhrr"]
-[ext_resource type="PackedScene" uid="uid://df7m5q0rhisay" path="res://scenes/camera_2d.tscn" id="5_0tnpc"]
-[ext_resource type="PackedScene" uid="uid://dj3eph72hljys" path="res://scenes/killzone.tscn" id="5_iywne"]
-[ext_resource type="PackedScene" uid="uid://dvtqi3y82jnkq" path="res://scenes/slime moving.tscn" id="6_p57ef"]
-[ext_resource type="PackedScene" uid="uid://cnijrnjsesf13" path="res://scenes/slime.tscn" id="7_u5sy4"]
-[ext_resource type="FontFile" uid="uid://cbk75sr5jjyku" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="8_gee14"]
+[ext_resource type="PackedScene" uid="uid://5k0sfxbeucs2" path="res://scenes/gamemanager.tscn" id="1_p6rmu"]
+[ext_resource type="Texture2D" uid="uid://edn0g671stlb" path="res://assets/sprites/world_tileset.png" id="2_34hum"]
+[ext_resource type="PackedScene" uid="uid://dp1ms8wu1se6g" path="res://scenes/player.tscn" id="3_vhkxn"]
+[ext_resource type="PackedScene" uid="uid://dj3eph72hljys" path="res://scenes/killzone.tscn" id="4_1q7iv"]
+[ext_resource type="PackedScene" uid="uid://df7m5q0rhisay" path="res://scenes/camera_2d.tscn" id="5_gj3kh"]
+[ext_resource type="PackedScene" uid="uid://cnijrnjsesf13" path="res://scenes/slime.tscn" id="6_myogd"]
+[ext_resource type="PackedScene" uid="uid://dvtqi3y82jnkq" path="res://scenes/slime moving.tscn" id="7_s4l03"]
+[ext_resource type="PackedScene" uid="uid://7jhaeagmdeqc" path="res://scenes/coin.tscn" id="8_ypncs"]
+[ext_resource type="FontFile" uid="uid://cbk75sr5jjyku" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="9_0qejo"]
+[ext_resource type="PackedScene" uid="uid://jats7arcedkq" path="res://scenes/next_level.tscn" id="10_erlbe"]
 
 [sub_resource type="GDScript" id="GDScript_e2o6t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u5sy4"]
-texture = ExtResource("2_yqjtg")
+texture = ExtResource("2_34hum")
 0:0/0 = 0
 0:0/0/physics_layer_1/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -229,7 +230,7 @@ distance = -172.83147
 script = SubResource("GDScript_e2o6t")
 metadata/_edit_horizontal_guides_ = [180.0]
 
-[node name="gamemanager" parent="." unique_id=223837171 instance=ExtResource("1_0tnpc")]
+[node name="gamemanager" parent="." unique_id=223837171 instance=ExtResource("1_p6rmu")]
 unique_name_in_owner = true
 
 [node name="TileMap" type="TileMap" parent="." unique_id=1940941971]
@@ -239,7 +240,7 @@ layer_0/tile_data = PackedInt32Array(1048547, 0, 15, 1048548, 0, 15, 917464, 0, 
 layer_1/name = "Layer1"
 layer_1/tile_data = PackedInt32Array(458749, 0, 0, 458750, 0, 0, 458751, 0, 0, 327685, 0, 0, 327680, 0, 0, 327681, 0, 0, 393218, 0, 0, 393220, 0, 0, 393219, 0, 0, 458748, 0, 0, 458747, 0, 0, 524283, 65536, 0, 524284, 65536, 0, 589821, 65536, 2, 589822, 0, 1, 655358, 0, 1, 589823, 65536, 2, 524287, 65536, 0, 524286, 65536, 0, 524285, 65536, 0, 589820, 0, 1, 655357, 0, 1, 655356, 0, 1, 589819, 65536, 2, 655359, 0, 1, 458752, 0, 1, 393216, 65536, 0, 393217, 65536, 0, 458753, 65536, 0, 524289, 65536, 2, 524288, 0, 1, 589825, 0, 1, 458755, 65536, 0, 458754, 65536, 0, 458756, 65536, 0, 393221, 65536, 0, 589824, 0, 1, 589826, 0, 1, 524290, 0, 1, 524291, 65536, 2, 524292, 0, 1, 655355, 0, 1, 589828, 0, 1, 589827, 0, 1, 524293, 65536, 2, 589829, 0, 1, 458757, 65536, 1, 524296, 458752, 3, 524297, 458752, 3, 524298, 458752, 3, 589834, 458752, 3, 589833, 458752, 3, 589832, 458752, 3, 524299, 458752, 3, 589835, 458752, 3, 589836, 458752, 3, 524301, 458752, 3, 524300, 458752, 3, 589837, 458752, 3, 524304, 0, 0, 458771, 0, 0, 327701, 0, 0, 262166, 0, 0, 65561, 0, 0, 26, 0, 0, 27, 0, 0, 28, 0, 0, 29, 0, 0, 65565, 0, 0, 65566, 0, 0, 65567, 0, 0, 65568, 0, 0, 65569, 0, 0, 65570, 0, 0, 131097, 65536, 0, 131098, 65536, 0, 131099, 65536, 0, 65564, 65536, 0, 65563, 65536, 0, 65562, 65536, 0, 131100, 65536, 0, 131101, 65536, 0, 131102, 65536, 0, 131103, 65536, 0, 196640, 65536, 0, 196641, 65536, 0, 196642, 65536, 0, 196643, 65536, 0, 131106, 65536, 0, 131104, 65536, 0, 196639, 65536, 0, 131105, 65536, 0, 196638, 65536, 0, 196637, 65536, 0, 196634, 65536, 0, 196633, 65536, 0, 196635, 65536, 0, 196636, 65536, 0, 131095, 0, 0, 196615, 0, 0, 65545, 0, 0, -65525, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, -65517, 0, 0, 131096, 0, 0, 65578, 0, 0, 65579, 0, 0, 65580, 0, 0, 65581, 0, 0, 65582, 0, 0, 196644, 0, 0, 131107, 0, 0, 65583, 0, 0, 65584, 0, 0, 49, 0, 1, -65487, 0, 1, -131023, 0, 1, -196559, 0, 1, 131115, 65536, 1, 131114, 65536, 1, 262192, 65536, 1, 262193, 65536, 1, 196657, 65536, 1, 131121, 65536, 1, 131120, 65536, 1, 196652, 65536, 1, 196653, 65536, 1, 196654, 65536, 1, 196655, 65536, 1, 196651, 65536, 1, 131117, 65536, 1, 131118, 65536, 1, 131119, 65536, 1, 196656, 65536, 1, 131116, 65536, 1, 262189, 65536, 1, 262190, 65536, 1, 262191, 65536, 1, 65585, 65536, 1, 65575, 589824, 0, 65576, 655360, 0, 65577, 720896, 0, 65572, 589824, 0, 65573, 655360, 0, 65574, 720896, 0, 65571, 655360, 0)
 
-[node name="player" parent="." unique_id=1174058241 instance=ExtResource("1_80nbo")]
+[node name="player" parent="." unique_id=1174058241 instance=ExtResource("3_vhkxn")]
 z_index = 3
 position = Vector2(44, 58)
 script = SubResource("GDScript_0tnpc")
@@ -249,47 +250,47 @@ zoom = Vector2(2, 2)
 limit_bottom = 200
 position_smoothing_enabled = true
 
-[node name="Killzone" parent="." unique_id=1533222351 instance=ExtResource("5_iywne")]
+[node name="Killzone" parent="." unique_id=1533222351 instance=ExtResource("4_1q7iv")]
 position = Vector2(4, 4)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Killzone" unique_id=1028443575]
 shape = SubResource("WorldBoundaryShape2D_p57ef")
 
-[node name="Camera2D" parent="." unique_id=1139573095 instance=ExtResource("5_0tnpc")]
+[node name="Camera2D" parent="." unique_id=1139573095 instance=ExtResource("5_gj3kh")]
 position = Vector2(47, 63)
 
 [node name="enemy" type="Node" parent="." unique_id=1873457118]
 
-[node name="slime" parent="enemy" unique_id=730723413 instance=ExtResource("7_u5sy4")]
+[node name="slime" parent="enemy" unique_id=730723413 instance=ExtResource("6_myogd")]
 position = Vector2(8, 75)
 
-[node name="slime moving" parent="enemy" unique_id=717102128 instance=ExtResource("6_p57ef")]
+[node name="slime moving" parent="enemy" unique_id=717102128 instance=ExtResource("7_s4l03")]
 position = Vector2(201, -1)
 
-[node name="slime2" parent="enemy" unique_id=1772112236 instance=ExtResource("7_u5sy4")]
+[node name="slime2" parent="enemy" unique_id=1772112236 instance=ExtResource("6_myogd")]
 position = Vector2(392, 32)
 
 [node name="coins" type="Node" parent="." unique_id=602909623]
 
-[node name="coin" parent="coins" unique_id=1115677367 instance=ExtResource("4_lbhrr")]
+[node name="coin" parent="coins" unique_id=1115677367 instance=ExtResource("8_ypncs")]
 position = Vector2(148, 117)
 
-[node name="coin2" parent="coins" unique_id=1424175922 instance=ExtResource("4_lbhrr")]
+[node name="coin2" parent="coins" unique_id=1424175922 instance=ExtResource("8_ypncs")]
 position = Vector2(337, 68)
 
-[node name="coin3" parent="coins" unique_id=524979051 instance=ExtResource("4_lbhrr")]
+[node name="coin3" parent="coins" unique_id=524979051 instance=ExtResource("8_ypncs")]
 position = Vector2(309, 102)
 
-[node name="coin4" parent="coins" unique_id=233889453 instance=ExtResource("4_lbhrr")]
+[node name="coin4" parent="coins" unique_id=233889453 instance=ExtResource("8_ypncs")]
 position = Vector2(260, 116)
 
-[node name="coin5" parent="coins" unique_id=597534626 instance=ExtResource("4_lbhrr")]
+[node name="coin5" parent="coins" unique_id=597534626 instance=ExtResource("8_ypncs")]
 position = Vector2(130, 39)
 
-[node name="coin6" parent="coins" unique_id=498790160 instance=ExtResource("4_lbhrr")]
+[node name="coin6" parent="coins" unique_id=498790160 instance=ExtResource("8_ypncs")]
 position = Vector2(-74, 86)
 
-[node name="coin7" parent="coins" unique_id=1342610803 instance=ExtResource("4_lbhrr")]
+[node name="coin7" parent="coins" unique_id=1342610803 instance=ExtResource("8_ypncs")]
 position = Vector2(181, 39)
 
 [node name="Node" type="Node" parent="." unique_id=503158475]
@@ -301,7 +302,7 @@ offset_left = 220.0
 offset_top = -42.0
 offset_right = 538.0
 offset_bottom = 16.0
-theme_override_fonts/font = ExtResource("8_gee14")
+theme_override_fonts/font = ExtResource("9_0qejo")
 text = "complete  the tutorial 
 to move to levels "
 
@@ -310,10 +311,13 @@ offset_left = -153.0
 offset_top = -42.0
 offset_right = 133.0
 offset_bottom = 45.0
-theme_override_fonts/font = ExtResource("8_gee14")
+theme_override_fonts/font = ExtResource("9_0qejo")
 text = "cortols 
 jump -- ↑/ space/W
 move right -- D/→
 move left -- S"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="next level" parent="." unique_id=700699788 instance=ExtResource("10_erlbe")]
+position = Vector2(760, 7)

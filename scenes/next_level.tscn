@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://jats7arcedkq"]
+
+[ext_resource type="Script" uid="uid://snmebfa6gcvo" path="res://scripts/next_level.gd" id="1_sd4vo"]
+[ext_resource type="Texture2D" uid="uid://b5dvyjxw2m3lk" path="res://icon.svg" id="2_e8fy2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wlp6t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_e8fy2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_il65w"]
+size = Vector2(45.252525, 37.393257)
+
+[node name="next level" type="Area2D" unique_id=700699788]
+script = ExtResource("1_sd4vo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=133907449]
+position = Vector2(-5.500001, -12.625)
+scale = Vector2(0.2421875, 0.18164063)
+sprite_frames = SubResource("SpriteFrames_wlp6t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1007682486]
+position = Vector2(-7.499999, -12)
+scale = Vector2(0.7734375, 0.6953125)
+shape = SubResource("RectangleShape2D_il65w")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://ch6c1rks0d3di"]
+
+[ext_resource type="FontFile" uid="uid://cbk75sr5jjyku" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_5hgee"]
+[ext_resource type="Script" uid="uid://4h5ixhpoynu4" path="res://scripts/main_menu.gd" id="1_12vek"]
+[ext_resource type="Texture2D" uid="uid://cpn63uyap3gvs" path="res://assets/tilesetOpenGameBackground.png" id="2_xsilq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_12vek"]
+texture = ExtResource("2_xsilq")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xsilq"]
+bg_color = Color(0.87058824, 0.52156866, 0.36862746, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+corner_detail = 16
+
+[node name="MainMenu" type="Control" unique_id=1715126627]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_12vek")
+
+[node name="Panel" type="Panel" parent="." unique_id=25323980]
+show_behind_parent = true
+layout_mode = 0
+offset_right = 1148.0
+offset_bottom = 637.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_12vek")
+
+[node name="Button" type="Button" parent="." unique_id=645619489]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 215.0
+offset_right = 850.0
+offset_bottom = 387.0
+theme_override_fonts/font = ExtResource("1_5hgee")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_xsilq")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_xsilq")
+text = "START GAME"
+
+[node name="Label" type="Label" parent="." unique_id=7596080]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 80.0
+offset_right = 1092.0
+offset_bottom = 251.0
+theme_override_fonts/font = ExtResource("1_5hgee")
+theme_override_font_sizes/font_size = 64
+text = "HELP THE PRINCESS"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
