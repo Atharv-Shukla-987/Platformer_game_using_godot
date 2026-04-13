@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://5k0sfxbeucs2"]
+
+[ext_resource type="Script" uid="uid://b0yxlulhcd21c" path="res://scripts/gamemanager.gd" id="1_8cp1g"]
+
+[node name="gamemanager" type="Node" unique_id=223837171]
+script = ExtResource("1_8cp1g")
+
+[node name="score cartd" type="Label" parent="." unique_id=228544608]
+offset_left = 529.0
+offset_top = -40.0
+offset_right = 649.0
+offset_bottom = -17.0
+text = "0 coins "
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
