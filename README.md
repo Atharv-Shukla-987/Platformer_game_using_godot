@@ -6,11 +6,12 @@ A physics-based 2D side-scrolling platformer developed in the **Godot Engine**. 
 
 ## 🎮 Game Features 
 1. **Kinematic Controller:**      Smooth movement using `CharacterBody2D`.
- 2.**Physics System:**          Gravity  and acceleration constants for a "weighty" feel.
- 3.**Animation States:**       Integrated `AnimatedSprite2D` handling idle, run, and jump states.
- 4.**Level Design:**           Utilizes Godot's **TileMap** system for efficient world building.
- 5.**Camera Tracking:**      `Camera2D` with smoothing and boundary limits.
-6. A background sound from game hollow knight
+ 2.**Physics System:**          Gravity  and acceleration constants for a "weighty" feel
+3. **Animation States:**       Integrated `AnimatedSprite2D` handling idle, run, and jump states.
+4. **Level Design:**           Utilizes Godot's **TileMap** system for efficient world building.
+5. **Camera Tracking:**      `Camera2D` with smoothing and boundary limits.
+6.  A background sound from game hollow knight
+   
 ## 🛠️ Tech Used
 * **Engine:**    Godot 4.3
 * **Scripting:** GDScript
