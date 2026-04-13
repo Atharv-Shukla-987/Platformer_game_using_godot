@@ -25,16 +25,15 @@ Platformer_game_using_godot/
 ├──  Assets/           
 ├── project.godot       
 └── README.md          
-```
+└── other files
+
 ## 🚀 Getting Started
 
-    Go to https://platformer-game-using-go-git-7b3ca4-atharv-shukla-987s-projects.vercel.app/exports/exports.html
+ Go to https://platformer-game-using-go-git-7b3ca4-atharv-shukla-987s-projects.vercel.app/exports/exports.html
 
 ### 🕹️ Controls
-
-    Move: A / D or Arrow Keys
-
-    Jump: Space
+  Move: A / D or Arrow Keys
+  Jump: Space
 
 ## 👤 Author
 
